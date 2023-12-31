@@ -11,7 +11,7 @@ body {
   background: #fafafa;
 }
 
-ul {
+.navigationWrap {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -20,6 +20,10 @@ ul {
   font-size: 15px;
   font-weight: 500;
   color: #fff;
+} 
+
+.hamburg{
+  display: none;
 }
 
 ul a {
@@ -36,6 +40,9 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(2, 2, 70, 0.933);
+}
+.menuList a:hover{
+  color: rgb(252, 181, 51);
 }
 
 .logoDiv {
@@ -531,12 +538,24 @@ header {
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
 }
 .blogContent {
   text-align: left;
-  padding-bottom: 20px;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
 }
 .blogReadBtn {
+  display: block;
   color: orange;
   font-weight: 600;
   padding-bottom: 10px;
@@ -793,6 +812,8 @@ header {
   flex-direction: column;
   gap: 20px;
   align-items: flex-start;
+  color: #fff;
+  list-style: none;
 }
 .footerLink {
   text-align: left;
@@ -841,8 +862,12 @@ header {
     visibility: hidden;
     transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
   }
+  
+.hamburg{
+  display: block;
+}
 
-  ul {
+  .navigationWrap {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1155,24 +1180,41 @@ header {
     background-color: rgba(2, 2, 70, 0.933);
     height: auto;
     width: 100%;
+    /* position: relative; */
   }
 
   .footerTop {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: max-content;
     gap: 30px;
     align-items: center;
   }
 
   .footerLinksWrap {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
     width: 90%;
     gap: 40px;
-    
+  }
+  .footerLogoWrap {
+    padding: 20px;
+    width: 85%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
   }
   .footerBottom {
     width: 100%;
+  }
+  .footerLinkGp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    color: #fff;
+    list-style: none;
   }
 }
