@@ -1,0 +1,1148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+ul a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(2, 2, 70, 0.933);
+}
+
+.logoDiv {
+  width: 400px;
+  /* height: 100px; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.containerPadding {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.logoDiv > img {
+  width: 70px;
+  height: 70px;
+}
+.logoText {
+  text-align: center;
+}
+
+.logoText h1 {
+  font-size: 28px;
+  line-height: 0.7;
+  color: #fff;
+}
+
+.logoText span {
+  font-size: 18px;
+  width: 200px;
+  margin: 1px auto;
+  font-weight: 400;
+}
+
+.hamburgMenu {
+  display: none;
+}
+
+/* HERO SECTION */
+#hero {
+  height: 90vh;
+  background-image: url("/img/hero-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.heroContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 90vh;
+}
+.hero-left {
+  flex-basis: 30%;
+}
+.hero-left > img {
+  width: 500px;
+}
+.hero-right {
+  flex-basis: 70%;
+}
+.hero-right h1 {
+  font-size: 42px;
+  color: #fff;
+}
+
+.hero-right p {
+  color: rgb(253, 253, 253);
+  font-size: 18px;
+  padding-bottom: 25px;
+  font-weight: 600;
+}
+.brShow {
+  display: none;
+}
+
+.tourLink {
+  border: none;
+  padding: 15px 35px;
+  border-radius: 5px;
+  background-color: rgba(2, 2, 70, 0.733);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tourLink:hover {
+  background-color: #fff;
+  color: #666;
+  transform: scale(1.1);
+}
+/* ABOUT SECTION */
+
+#about {
+  margin-top: 7%;
+}
+.about-head {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 12px;
+  font-size: 18px;
+}
+
+.aboutContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 120vh;
+}
+
+.about-right h1 {
+  font-size: 35px;
+  width: 500px;
+  padding-bottom: 10px;
+}
+.about-right .about-para {
+  color: #666;
+  padding: 20px 0px;
+}
+.signature {
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 35px;
+  padding: 30px 0px;
+}
+.propName {
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+.propTitle {
+  color: #666;
+}
+
+/* CENTER DISPLAY */
+.centerDisplay {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
+  bottom: -250px;
+}
+.displaysect {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.displayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.displayOverlay1,
+.displayOverlay2,
+.displayOverlay3 {
+  background-color: rgb(245, 123, 143);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  transition: all ease-in-out 0.5s;
+}
+.displayOverlay2 {
+  background-color: rgb(240, 160, 11);
+}
+.displayOverlay3 {
+  background-color: lightblue;
+}
+
+.displayOverlay1:hover {
+  opacity: 0.5;
+}
+.displayOverlay2:hover {
+  opacity: 0.5;
+}
+.displayOverlay3:hover {
+  opacity: 0.5;
+}
+
+.displaysect h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  padding-left: 10px;
+}
+.displaysect h1 span {
+  font-weight: 300;
+}
+
+/* STUDENTS SECTION */
+/* #students{
+  margin: 7% auto;
+} */
+.studentsContainer {
+  height: 120vh;
+  background-color: #fff;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.studentsHeading {
+  padding: 30px 0px;
+  font-size: 28px;
+  font-weight: 300;
+}
+.studentsPara {
+  width: 70%;
+  margin: 1px auto;
+  color: #666;
+  font-weight: 300;
+}
+.studentsTitle {
+  padding: 20px 0px;
+  letter-spacing: 15px;
+  font-size: 35px;
+  color: #666;
+}
+.studentsBottom {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.studWrap {
+  width: 160px;
+}
+.studIcon {
+  width: 100%;
+  height: 120px;
+}
+.studText {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/* Enrol section */
+
+.enrol {
+  margin: 7% auto;
+  height: 150px;
+  width: 80%;
+  position: relative;
+}
+.enrolTextDiv {
+  display: flex;
+  padding: 10px 5px;
+}
+.enrolIcon {
+  width: 100px;
+}
+.enrolText {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 300;
+}
+.enrolText span {
+  font-weight: 600;
+  font-size: 25px;
+}
+.enrolBtn {
+  border: 0;
+  /* padding: 12px 32px; */
+  height: 70px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+.enrolBtn:hover {
+  transform: scale(0.9);
+}
+.enrolOverlay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.enOverlay {
+  background-color: rgba(2, 2, 70, 0.822);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  transition: all ease-in-out 0.5s;
+}
+.enrolWrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  padding-left: 10px;
+}
+.enrolText strong {
+  font-size: 12px;
+}
+
+/* services section */
+#services {
+  margin: 7% auto;
+}
+.servicesHeading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 29px;
+  padding-bottom: 50px;
+}
+.serviceOptionsWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.serviceOptions {
+  width: 310px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.serviceOverlay {
+  background-color: rgba(0, 0, 0, 0.856);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: all ease-in-out 0.5s;
+  border-radius: 30px;
+}
+.serviceText {
+  font-size: 22px;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.serviceOverlay:hover {
+  opacity: 0.2;
+}
+
+/* Counter Section */
+#counter {
+  margin-top: 7%;
+  height: 80vh;
+}
+.counterContainer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.counterOverlay {
+  background-color: rgba(2, 2, 70, 0.822);
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.counterImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.counterTextWrap {
+  /* display: flex; */
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  /* bottom: -250px; */
+}
+
+.counterText {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.counterText span {
+  font-size: 18px;
+  font-weight: 300;
+}
+.counterWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: #fafafa;
+  padding: 30px 5px;
+  box-shadow: 2px 9px 21px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 9px 21px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 9px 21px -5px rgba(0, 0, 0, 0.75);
+  /* bottom: -250px; */
+}
+.numberWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countNum {
+  font-size: 34px;
+}
+
+/* Blog Section */
+
+#blog {
+  margin-bottom: 2%;
+}
+.blogContainer {
+  background-color: #fafafa;
+  height: 110vh;
+}
+.blogHeading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  padding: 40px 0px;
+}
+.blogCards {
+  width: 300px;
+  height: 510px;
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -1px 4px 20px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 4px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 20px -1px rgba(0, 0, 0, 0.75);
+}
+.blogHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogLogo {
+  width: 40px;
+  border-radius: 50%;
+  padding-right: 10px;
+}
+.blogHeadLeft {
+  display: flex;
+}
+.blogHeadDiv1{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.blogImage {
+  width: 100%;
+  height: 200px;
+  margin: 1px auto;
+  padding-top: 10px;
+}
+.blogAuthor {
+  font-weight: 600;
+}
+.blogWrap {
+  display: flex;
+  gap: 20px;
+}
+.blogTitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.blogContent {
+  text-align: left;
+  padding-bottom: 20px;
+}
+.blogReadBtn {
+  color: orange;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testiContainer {
+  /* height: 100vh; */
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.testiQuote {
+  padding: 20px 0px;
+  width: 40px;
+}
+
+.testiContent {
+  width: 80%;
+  text-align: center;
+  padding: 40px 5px;
+}
+.testiCardsWrap {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 7% auto;
+}
+
+.testiCards {
+  width: 220px;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  margin: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  opacity: 0.7;
+  transition: height 0.3s ease-in-out, top 0.3s ease-in-out;
+  position: relative;
+  top: 0; /* Initial position */
+  cursor: pointer;
+}
+.testiCards:hover {
+  background-color: rgba(2, 2, 70, 1);
+  color: white;
+}
+.testiImage {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+.testiDesc {
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.testiTitle {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.testiCards.active {
+  height: 300px;
+  top: -50px; /* Adjust this value as needed */
+  background-color: rgba(2, 2, 70, 0.733);
+  color: white;
+  opacity: 1;
+}
+
+/* Gallery Section */
+#gallery {
+  margin-bottom: 7%;
+  position: relative;
+}
+.galleryContainer {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+}
+.leftGallDiv {
+  width: 50%;
+  height: 100%;
+}
+.gallImage1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.RightGallDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  width: 50%;
+  height: 100%;
+}
+
+.gallImageWrap {
+  width: 100%;
+  height: 100%;
+}
+.gallImage2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galleryImage {
+  cursor: pointer;
+  transition: border 0.2s ease-in;
+}
+.galleryImage:hover {
+  border: 10px solid rgb(241, 179, 64);
+}
+
+.galleryImageDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(253, 253, 253, 0.9);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.closeIcon {
+  width: 40px;
+  float: right;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.showImageWrap {
+  width: 50%;
+  height: 300px;
+  margin: 1px auto;
+  opacity: 1;
+}
+.showImage {
+  width: 100%;
+  height: 80%;
+  padding-bottom: 20px;
+}
+.galleryImageDesc {
+  text-align: center;
+  color: #666;
+}
+
+/* subscriber  Section */
+
+.subscriber {
+  margin: 7% auto;
+  height: 150px;
+  width: 80%;
+  position: relative;
+}
+.subscriberTextDiv {
+  display: flex;
+  padding: 10px 5px;
+  flex-basis: 70%;
+}
+
+.subscriberText {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 300;
+}
+.subscriberText span {
+  font-weight: 600;
+  font-size: 25px;
+}
+.subscriberBtn {
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+.subscriberBtn:hover {
+  transform: scale(0.9);
+}
+.subscriberOverlay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.susOverlay {
+  background-color: rgba(2, 2, 70, 0.822);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  transition: all ease-in-out 0.5s;
+}
+.subscriberWrap {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  color: #fff;
+  width: 95%;
+  padding-left: 10px;
+}
+.subscribeInput {
+  border: 0;
+  padding: 15px 10px;
+  width: 250px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+/* footer Section  */
+#footer {
+  background-color: rgba(2, 2, 70, 0.833);
+  height: 300px;
+  width: 100%;
+}
+.footerTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerLinksWrap {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footerLinkGp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.footerLink {
+  text-align: left;
+  font-weight: 300;
+  cursor: pointer;
+}
+.boldLink {
+  font-weight: 600;
+}
+.footerLogoWrap {
+  padding: 20px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(2, 2, 70, 0.8);
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px;
+}
+.footerBottom {
+  background-color: rgba(2, 2, 70, 0.9);
+  /* height: 100%; */
+}
+.footerSocial {
+  width: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .navigation {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 2rem;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    background-color: rgba(2, 2, 70);
+    width: 100vw;
+    z-index: 99;
+  }
+  .menuList {
+    transition: transform 0.3s ease-out, border-bottom 0.3s ease-in;
+  }
+  .navigation.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menuList:hover {
+    transform: translateX(-10px);
+    border-bottom: 3px solid rgb(252, 176, 34);
+  }
+  .logoDiv {
+    height: 100px;
+  }
+  .containerPadding {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .openMenu {
+    width: 50px;
+    cursor: pointer;
+  }
+  .logoText h1 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  /* HERO SECTION */
+
+  #hero {
+    height: auto;
+    width: 100%;
+    height: 80vh;
+  }
+  .heroContainer {
+    display: block;
+    height: auto;
+    padding-top: 70px;
+  }
+  .hero-left {
+    display: none;
+  }
+  .hero-right {
+    flex-basis: 100%;
+  }
+  .brShow {
+    display: block;
+  }
+  .hero-right h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0px;
+    line-height: 1.4;
+  }
+  .hero-right p {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .tourlinkDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+ /* CENTER DISPLAY */
+ .centerDisplay {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.displaysect {
+  width: 100%;
+  height: 200px;
+}
+/* ABOUT SECTION */
+#about {
+  margin-top: 2%;
+  width: 100%;
+}
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.about-right h1 {
+  font-size: 28px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.about-right,.about-left{
+  width: 100%;
+  padding: 20px;
+}
+.overlayImg{
+  width: 100%;
+}
+
+/* STUDENTS SECTION */
+#students{
+  margin: 2% auto;
+  width: 100%;
+}
+.studentsContainer {
+  height: auto;
+}
+.studentsHeading {
+  font-size: 28px;
+}
+.studentsPara {
+  padding: 20px;
+  width: 100%;
+}
+.studentsBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+}
+
+/* Enrol section */
+
+.enrol {
+  margin: 4% auto;
+  height: 470px;
+  width: 100%;
+  position: relative;
+}
+.enrolTextDiv {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  flex-direction: column;
+}
+.enrolWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.enrolText {
+  text-align: center;
+}
+.enrolIcon{
+  padding-bottom: 10px;
+}
+
+/* services section */
+#services {
+  margin: 2% auto;
+  width: 100%;
+  height: auto;
+}
+.serviceOptionsWrap {
+  display: flex;
+  flex-direction: column;
+}
+.serviceOptions {
+  width: 80%;
+}
+/* Counter Section */
+#counter {
+  margin-top: 7%;
+  height: auto;
+}
+.counterTextWrap {
+  width: 100%;
+}
+.counterWrap {
+  display: none;
+
+}
+.counterContainer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.counterText {
+  font-size: 22px;
+  padding: 10px;
+}
+/* Blog Section */
+#blog {
+  margin-bottom: 2%;
+  width: 100%;
+  height: auto;
+}
+.blogContainer {
+  height: auto;
+}
+.blogHeading {
+  font-size: 24px;
+}
+.blogCards {
+  width: 90%;
+  height: 510px;
+  margin: 20px auto;
+}
+.blogWrap {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+.hideBlogCards{
+  display: none;
+}
+
+/* Testimonials Section  */
+
+.hideTestiCards{
+  display: none;
+}
+#testimonials{
+  height: auto;
+}
+.testiCardsWrap {
+  flex-direction: column;
+}
+.testiCards {
+  width: 80%;
+  margin: 20px auto;
+  height: 250px;
+}
+
+/* Gallery Section */
+#gallery {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+.hideGallImage{
+  display: none;
+}
+.leftGallDiv {
+  width: 100%;
+  height: 200px;
+}
+.RightGallDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.gallImageWrap {
+  flex-basis: 25%;
+  height: 200px;
+}
+.galleryImageDisplay {
+  height: 70%;
+  top: 30%;
+}
+.showImageWrap {
+  width: 90%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  opacity: 1;
+}
+/* subscriber  Section */
+
+.subscriber {
+  height: 350px;
+  width: 100%;
+ 
+}
+
+.subscriberTextDiv {
+  flex-basis: 100%;
+}
+
+.subscriberText {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+.subscriberWrap {
+  display: flex;
+  flex-direction: column;
+
+}
+
+}
