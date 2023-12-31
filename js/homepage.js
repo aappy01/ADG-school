@@ -5,18 +5,17 @@ const navList = document.querySelector(".navigation");
 
 let hamburgOpen = false;
 
-menuOpen.addEventListener('click', () => {
+menuOpen.addEventListener("click", () => {
   hamburgOpen = !hamburgOpen;
 
   if (hamburgOpen) {
-    navList.classList.add('open');
-    menuOpen.src = './img/menu-close.svg';
+    navList.classList.add("open");
+    menuOpen.src = "./img/menu-close.svg";
   } else {
-    navList.classList.remove('open');
-    menuOpen.src = './img/menu.svg';
+    navList.classList.remove("open");
+    menuOpen.src = "./img/menu.svg";
   }
 });
-
 
 // Select the image element
 const image = document.querySelector(".counterImage");
@@ -66,28 +65,28 @@ const testimonials = {
     name: "Mr. Abiodun",
     desc: "Best Teacher (2020/21)",
     content:
-      "The teaching, in my opinion, is the best that anyone can hope for. Andus D'Great School staff provide an environment in which students are able to reach their full potential. As well as this, I felt constantly challenged to push myself to exceed what is expected. I have no doubt that the person I become is due to my time spent here and that the last six years have been the best of my life.-------2",
+      "As a teacher at Andus D'Great, I am proud to be part of an institution that prioritizes academic excellence and student well-being. The collaborative and supportive environment among the staff fosters a positive atmosphere for both teaching and learning. I am privileged to contribute to the growth and development of our students at Andus D'Great.",
   },
 
   person3: {
     name: "Ada Victor",
     desc: "Best Graduating Student (2021/22)",
     content:
-      "The teaching, in my opinion, is the best that anyone can hope for. Andus D'Great School staff provide an environment in which students are able to reach their full potential. As well as this, I felt constantly challenged to push myself to exceed what is expected. I have no doubt that the person I become is due to my time spent here and that the last six years have been the best of my life.-------3",
+      "I owe my success to the exceptional academic support and guidance at Andus D'Great. The dedicated teachers and challenging curriculum pushed me to achieve my fullest potential. I am grateful for the enriching educational experience that has prepared me for future endeavors",
   },
 
   person4: {
     name: "Mr. Ogbonaya",
     desc: "A Parent",
     content:
-      "The teaching, in my opinion, is the best that anyone can hope for. Andus D'Great School staff provide an environment in which students are able to reach their full potential. As well as this, I felt constantly challenged to push myself to exceed what is expected. I have no doubt that the person I become is due to my time spent here and that the last six years have been the best of my life.-------4",
+      "We are thrilled with our experience at Andus D'Great. The dedicated teachers and staff have created a nurturing environment that encourages both academic and personal growth. The variety of extracurricular activities allows our child to explore interests beyond the classroom",
   },
 
   person5: {
     name: "Iyinade Great",
     desc: "Senior Prefect (2021/22)",
     content:
-      "The teaching, in my opinion, is the best that anyone can hope for. Andus D'Great School staff provide an environment in which students are able to reach their full potential. As well as this, I felt constantly challenged to push myself to exceed what is expected. I have no doubt that the person I become is due to my time spent here and that the last six years have been the best of my life.-------5",
+      "As a previous Senior Prefect, my time at Andus D'Great was transformative. The leadership opportunities provided not only enhanced my organizational and interpersonal skills but also instilled a sense of responsibility and pride. Andus D'Great truly fosters an environment that nurtures both academic and personal development.",
   },
 };
 
