@@ -1,0 +1,221 @@
+/* Pre-School Stylesheet */
+
+/* banner section */
+.banner {
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+.bannerOverlay {
+  background-color: rgba(2, 2, 70, 0.822);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  transition: all ease-in-out 0.5s;
+}
+.bannerOverlayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bannerTextWrap {
+  text-align: center;
+  font-size: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  color: #fff;
+}
+
+/* container section */
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.containerRightDiv {
+  width: 70%;
+  padding: 40px 20px;
+}
+.containerLeftDiv {
+  width: 30%;
+  padding: 60px 30px;
+  background-color: aliceblue;
+}
+.leftDivHead {
+  font-weight: 600;
+}
+.fa-regular {
+  color: red;
+  padding-right: 10px;
+}
+.leftDivList {
+  padding: 10px 20px;
+  color: grey;
+}
+.rightDivHead {
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.rightDivPara {
+  line-height: 1.8;
+}
+
+/* gallery section */
+.gallery-preschool {
+  height: auto;
+  margin: 4% auto;
+  padding: 20px 20px;
+}
+.gallery-preschoolWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery-image {
+  width: 300px;
+  height: 250px;
+}
+
+/* gallery section Elemtary School */
+.gallery-elementary {
+  height: auto;
+  margin: 4% auto;
+  padding: 20px 20px;
+}
+.gallery-elementaryWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* gallery section High School */
+.gallery-highschool {
+  height: auto;
+  margin: 4% auto;
+  padding: 20px 20px;
+}
+.gallery-highschoolWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* gallery section Senior High School */
+.gallery-seniorhighschool {
+  height: auto;
+  margin: 4% auto;
+  padding: 20px 20px;
+}
+.gallery-seniorhighschoolWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+  body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  /* banner section */
+  .banner {
+    height: 250px;
+    width: 100%;
+    position: relative;
+  }
+
+  /* container section */
+  .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 5%;
+  }
+  .containerRightDiv {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .containerLeftDiv {
+    width: 90%;
+    padding: 30px 15px;
+    background-color: aliceblue;
+  }
+
+  .rightDivHead {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  .rightDivPara {
+    line-height: 1.6;
+  }
+
+  /* gallery section */
+  .gallery-preschool {
+    height: auto;
+    margin: 4% auto;
+    padding: 20px 10px;
+  }
+  .gallery-preschoolWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .gallery-image {
+    width: 80%;
+    height: 250px;
+    margin: 1px auto;
+  }
+
+  /* gallery section Elemtary School */
+  .gallery-elementary {
+    height: auto;
+    margin: 4% auto;
+    padding: 20px 10px;
+  }
+  .gallery-elementaryWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* gallery section High School */
+  .gallery-highschool {
+    height: auto;
+    margin: 4% auto;
+    padding: 20px 10px;
+  }
+  .gallery-highschoolWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* gallery section Senior High School */
+  .gallery-seniorhighschool {
+    height: auto;
+    margin: 4% auto;
+    padding: 20px 10px;
+  }
+  .gallery-seniorhighschoolWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

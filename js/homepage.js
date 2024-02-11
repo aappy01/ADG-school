@@ -10,21 +10,24 @@ menuOpen.addEventListener("click", () => {
 
   if (hamburgOpen) {
     navList.classList.add("open");
-    menuOpen.src = "./img/menu-close.svg";
+    menuOpen.src = "../img/menu-close.svg";
   } else {
     navList.classList.remove("open");
-    menuOpen.src = "./img/menu.svg";
+    menuOpen.src = "../img/menu.svg";
   }
 });
 
+
+
 // Select the image element
+
 const image = document.querySelector(".counterImage");
 
 // Define image options
 const imageOptions = {
-  image1: "./img/counter image.jpg",
-  image2: "./img/counter image2.jpg",
-  image3: "./img/counter image3.jpg",
+  image1: "../resources/galleryImage20.jpeg",
+  image2: "../resources/galleryImage5.jpeg",
+  image3: "../resources/galleryImage10.jpeg",
 };
 
 // Set an initial image
@@ -141,26 +144,26 @@ testiCards.forEach((testiCard, index) => {
 
 const galleryImages = {
   image1: {
-    image: "./img/galleryImage5.jpg",
+    image: "./resources/galleryImage1.jpeg",
     title: "Our Graduating Students Excursion to University of Lagos, Akoka.",
   },
 
   image2: {
-    image: "./img/galleryImage2.jpg",
+    image: "./resources/galleryImage6.jpeg",
     title: "Graduation Ceremony (2022/23)",
   },
 
   image3: {
-    image: "./img/galleryImage3.jpg",
+    image: "./resources/galleryImage3.jpeg",
     title: "Cowbell Mathematic Competition (2009/2010)",
   },
   image4: {
-    image: "./img/galleryImage4.jpg",
+    image: "./resources/galleryImage7.jpeg",
     title: "Mock Exam For Our Junior Secondary Students",
   },
 
   image5: {
-    image: "./img/galleryImage1.jpg",
+    image: "./resources/galleryImage2.jpeg",
     title: "Cultural Day 2008",
   },
 };
@@ -181,6 +184,7 @@ function updateGalleryImage(index = 0) {
   // Assign the properties to the elements of each Image
   galleryImage.forEach((image, i) => {
     image.src = galleryImages[`image${i + 1}`].image;
+    image.style.height = "250px";
   });
 
   // Update the content of the active image
